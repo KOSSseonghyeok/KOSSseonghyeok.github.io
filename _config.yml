@@ -21,7 +21,8 @@
 title: 김성혁의 Git blog 만들기
 email: rlatjdgur3@kookmin.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  Git과 Markdown 강의 잘 들었습니다. 고생하셨습니다.
+  국민대학교 소프트웨어학과 20223055 김성혁
+   유레카프로젝트 과목 GIT BLOG 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: None
