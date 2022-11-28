@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 김성혁의 깃 블로그 만들기 과제
+title: 김성혁의 Git blog 만들기
 email: rlatjdgur3@kookmin.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  Git과 Markdown 강의 시간이 부족한게 흠이었어요ㅠㅠ
+  Git과 Markdown 강의 잘 들었습니다. 고생하셨습니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: None
