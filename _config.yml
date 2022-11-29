@@ -32,10 +32,11 @@ github_username:  KOSSseonghyeok
 theme: minima
 plugins:
   - jekyll-feed
+
 comment:
 provider: "disqus"
 disqus:
- shortname: "hyeoki_iii"
+ shortname: "hyeoki-iii"
 
 
 # Exclude from processing.
