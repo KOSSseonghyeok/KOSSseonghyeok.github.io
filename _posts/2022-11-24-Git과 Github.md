@@ -31,7 +31,7 @@ comments: true
 
 - Staged: 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미한다.
 
-### Git 명령어
+<!-- ### Git 명령어
 
 ![image](https://user-images.githubusercontent.com/104906731/204386509-00cb4466-2c58-4512-879d-a78c12a441e4.png)
 
@@ -64,5 +64,5 @@ branch를 생성한다.
 - ```git checkout``` 
 
 
-현재 작업 중인 branch를 전환한다.
+현재 작업 중인 branch를 전환한다. -->
 
