@@ -35,7 +35,7 @@ plugins:
 comment:
 provider: "disqus"
 disqus:
- shortname: "Hyeoki_iii"
+ shortname: "hyeoki_iii"
 
 
 # Exclude from processing.
