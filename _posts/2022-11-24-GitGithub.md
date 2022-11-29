@@ -11,7 +11,7 @@ comments: true
 ![image](https://user-images.githubusercontent.com/104906731/204385974-b1ecb500-632d-4cf8-a312-3702e5db0bb8.png)
 
 ## GitHub란?
--  git 저장소를 관리하는 클라우드 기반 호스팅 서비스이다. 다른 사람과 소스코드 공유가 가능하기 때문에 한 프로젝트에 여러 명의 사람이 참여하여 버전 제어 및 공동 작업이 가능하다.
+- git 저장소를 관리하는 클라우드 기반 호스팅 서비스이다. 다른 사람과 소스코드 공유가 가능하기 때문에 한 프로젝트에 여러 명의 사람이 참여하여 버전 제어 및 공동 작업이 가능하다.
 ![image](https://user-images.githubusercontent.com/104906731/204386074-0ea4927e-cc61-4e83-8ec2-1133d274fbe3.png)
 
 ### Git과 GitHub의 차이점
