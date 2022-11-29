@@ -36,32 +36,32 @@ comments: true
 ![image](https://user-images.githubusercontent.com/104906731/204386509-00cb4466-2c58-4512-879d-a78c12a441e4.png)
 
 
-- ```git init```
+- git init
  
  현재 작업중인 디렉토리를 git 저장소로 지정한다.
 
-- ```git status``` 
+- git status
 
 현재 Git 상태를 확인한다.
 
-- ```git add``` 
+- git add 
 
 Working Directory 폴더에서 작업한 파일이 있을 경우 add를 통해 staging area로 옮길 수 있다.
 
-- ```git commit``` 
+- git commit 
 
 git add 명령어로 스테이지에 추가한 파일을 local repository에 저장한다.
 
-- ```git push``` 
+- git push 
 
 Commit한 이력을 remote repository에 저장하며 현재 폴더를 그대로 업로드하는 것이 아니므로 변경사항을 업데이트하기 위해서는 반드시 add,commit으로 버전을 기록해야한다.
 
--  ```git branch``` 
+-  git branch
 
 
 branch를 생성한다.
 
-- ```git checkout``` 
+- git checkout
 
 
 현재 작업 중인 branch를 전환한다.
