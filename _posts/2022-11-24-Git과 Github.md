@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git과 GitHub"
-date: 2022-11-29 05:34:09 +0900
+date: 2022-11-24 05:34:09 +0900
 categories: jekyll update
 comments: true
 ---
