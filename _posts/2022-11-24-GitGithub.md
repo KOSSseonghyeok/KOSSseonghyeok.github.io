@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git과 GitHub"
+title: "깃과깃허브"
 date: 2022-11-24 20:34:09 +0900
 categories: jekyll update
 comments: true
