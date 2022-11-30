@@ -49,6 +49,6 @@ ex) ![image](https://user-images.githubusercontent.com/104906731/204807839-3cbdb
 ## 8. favicon 설정하기
 
 - [여기](https://realfavicongenerator.net/)에서 원하는 이미지를 favicon과 관련된 형식으로 전환한 뒤 public 폴더에 압축을 푼 형태로 저장하고
-전환할 때 있는 html코드를 _includes/head.html 파일에 추가한다.
+전환할 때 생기는 html코드를 _includes/head.html 파일에 추가한다.
 
 
