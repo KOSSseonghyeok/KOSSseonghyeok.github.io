@@ -1,134 +1,54 @@
-# Lanyon
+# Git Blog 만들기!!
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+1. 사용할 테마 고르기 
 
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
+- [다음](https://jekyllthemes.io/free)과 같은 사이트에서 Lanyon 테마를 고른 뒤 Lanyon 테마의 레포지토리를 fork한다. 이 때 레포지토리 이름을 KOSSseonghyeok.github.io로 설정한다. 
 
+2. 로컬과 연동하기 
 
-## Contents
+-```git clone```
+명령어를 이용해 로컬에 복사한다.
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+3. jekyll 설치하기
 
+- ```jekyll new . --force```
+명령어를 이용해 해당 디렉토리에 jekyll을 설치한다.
 
-## Usage
+4. jekyll 시작해보기
 
-Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+- ```jekyll serve```
+명령어를 이용해 jekyll을 시작할 수 있다.
 
+- jekyll을 시작한 뒤 ```http://127.0.0.1:4000/```로 접속하면 된다.
 
-## Options
+5. 테마 파일을 나한테 맞게 수정하기
 
-Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
+- _config.yml 파일의 title, email, description 등을 자신과 관련된 정보로 수정한다. 이 때 댓글 기능을 사용할 것이라서 다음과 같은 코드를 추가하였다.
 
+![image](https://user-images.githubusercontent.com/104906731/204805430-ab8f68aa-e098-4284-a855-40aac5aebbd8.png)
 
-### Sidebar menu
+- _layouts의 post.html 파일에 댓글 기능을 구현하기 위해 disqus에서 받아온 코드를 추가한다.
 
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+![image](https://user-images.githubusercontent.com/104906731/204806170-b669b168-fc59-484a-b5e5-2bcc48caffc6.png)
 
-```
----
-layout: page
-title: About
----
-```
+- 그 외에도 favicon을 수정하거나 사용하지 않을 기능과 파일들(About 버튼, download 버튼, About.md파일 등)을 제거함으로써 테마 파일을 나한테 맞게 수정한다.
 
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+6. post 만들기
 
+- _posts 디렉토리에 [제목 이름].md 파일을 만든 뒤 자신이 적고 싶은 내용의 post를 마크다운 문법으로 만든다. 이 때 댓글 기능을 구현할 것이라면
+post의 기본 설정에 ```comments: true``` 코드를 추가한다.
 
-### Themes
+ex) ![image](https://user-images.githubusercontent.com/104906731/204807839-3cbdb58f-d7e1-44e9-a69b-0ae41b009538.png)
 
-Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+- 다 만든 포스트는 [여기](https://kossseonghyeok.github.io/)를 통해 볼 수 있다.
 
-![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
+7. Google Analytics 기능 추가하기
 
-There are eight themes available at this time.
+- [여기](https://kossseonghyeok.github.io/jekyll/update/2022/11/26/Google-Analytics.html) 포스트에 자세히 설명해두었다.
 
-![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+8. favicon 설정하기
 
-To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
-```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+- [여기](https://realfavicongenerator.net/)에서 원하는 이미지를 favicon과 관련된 형식으로 전환한 뒤 public 폴더에 압축을 푼 형태로 저장하고
+전환할 때 있는 html코드를 _includes/head.html 파일에 추가한다.
 
 
-### Reverse layout
-
-![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
-![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
-
-### Sidebar overlay instead of push
-
-Make the sidebar overlap the viewport content with a single class:
-
-```html
-<body class="sidebar-overlay">
-  ...
-</body>
-```
-
-This will keep the content stationary and slide in the sidebar over the side content. It also adds a `box-shadow` based outline to the toggle for contrast against backgrounds, as well as a `box-shadow` on the sidebar for depth.
-
-It's also available for a reversed layout when you add both classes:
-
-```html
-<body class="layout-reverse sidebar-overlay">
-  ...
-</body>
-```
-
-### Sidebar open on page load
-
-Show an open sidebar on page load by modifying the `<input>` tag within the `sidebar.html` layout to add the `checked` boolean attribute:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
-```
-
-Using Liquid you can also conditionally show the sidebar open on a per-page basis. For example, here's how you could have it open on the homepage only:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
-```
-
-## Development
-
-Lanyon has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
